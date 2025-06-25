@@ -45,7 +45,7 @@ def special_multiplication(a: int, b: int) -> int:
 
 tools_list = [special_addition, special_subtraction, special_multiplication]
 
-openai_model_with_tools = openai_model.bind_tools(to ols_list)
+openai_model_with_tools = openai_model.bind_tools(tools_list)
 
 
 def tool_call_llm_node(state: MessagesState):
