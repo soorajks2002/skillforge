@@ -17,6 +17,8 @@ response = llm_with_structured_output.invoke("What is the structure of top level
 
 # with_structured_output returns a dict in response rather than full llm response
 print(response)
+print(type(response))
+print("\n\n--\n\n")
 
 
 # 2. Json schema based structured output
@@ -40,6 +42,8 @@ response = llm_with_structured_output.invoke("Which planet is closest to the far
 # returns the pydantic model instance, unlike a direct dict as above
 # doesn't returns the full llm response
 print(response)
+print(type(response))
+print("\n\n--\n\n")
 
 # you can directly access the fields
 print(response.answer)
